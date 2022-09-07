@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: "DM Sans",sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(27, 66%, 92%);
+}
+
+header, main{
+    width: 50%;
+    min-width: 500px;
+    min-height: 200px;
+    max-width: 700px;    
+}
+
+
+.header-container{
+    position: relative;
+    padding: 1rem;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 15px;
+    color: white;
+}
+
+.container{
+    padding: 1rem;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#logo{
+    position: absolute;
+    right: 5%;
+    top: 35%;
+}
+
+.graphs{
+    display: flex;
+    justify-content: space-around;
+}
+
+.graphs > *{
+    min-width: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.graph:hover{
+    cursor: pointer;
+    background-color: hsl(186, 34%, 60%);
+    transition: all 300ms;
+}
+
+.graph{
+    margin-top: auto;
+    width: 100%;
+    height: 20px;
+    background-color: hsl(10, 79%, 65%);
+}
+
+.niedz{
+    height: 30px;
+}
+
+h2{
+    margin-bottom: 50px;
+}
+
+footer{
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left, .right{
+    display: flex;
+    flex-direction: column;
+}
+
+.bold{
+    font-size: 3rem;
+}
+
+.right span{
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 400px){
+    header, main{
+        width: 80%;
+        min-width: 300px;
+    }
+    .graphs > *{
+        min-width: 30px;
+    }
+    footer{
+        margin: 0 0;
+    }
+    .bold, .right span{
+        font-size: 1.5rem;
+    }
+}
